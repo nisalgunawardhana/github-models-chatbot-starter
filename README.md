@@ -49,6 +49,8 @@ This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT
      ```
 ## Running the Examples
 
+The following examples demonstrate how to interact with the GPT-4o model using different features. Each script showcases a specific capability, such as basic chat, multi-turn conversations, streaming responses, image input, function/tool calling, and advanced reasoning(with o1-priview model). Run each file as described to see how the model responds to various types of input and tasks.
+
 ### Basic Chat Completion
 Run the `sample-basic.js` file:
 ```bash
@@ -91,13 +93,51 @@ This example demonstrates:
 - Complex problem solving
 - Ethical reasoning scenarios
 
-## Student Assessment Task
+---
+## Assessment Task: Multi-turn Coding Assistant Chatbot
 
-### Objective
-Create a multi-turn chatbot for coding assistance using the provided starter repository.
+You are required to build a multi-turn chatbot that provides coding assistance using the GPT-4o model via GitHub's AI inference API. Your chatbot should maintain conversation context, offer meaningful programming help, and support multiple languages and coding scenarios.
 
-5. **Complete the Assessment**
-   - Implement the multi-turn chatbot in the `assessment.js` file.
+### What to Do
+
+1. **Environment Setup**
+  - Use the `dotenv` package to load environment variables.
+  - Add your GitHub token to a `.env` file as `GITHUB_TOKEN`.
+  - Ensure your `.env` is listed in `.gitignore`.
+
+2. **API Initialization**
+  - Use the `openai` npm package.
+  - Configure the API client to use your GitHub token and the GitHub models endpoint.
+
+3. **Conversation Logic**
+  - Implement a loop that lets the user and bot exchange messages.
+  - Store the conversation history so the chatbot remembers previous messages.
+  - Allow the user to exit the chat gracefully (e.g., by typing `exit`).
+
+4. **Coding Assistance Features**
+  - Respond to user questions about programming concepts, code examples, debugging, and best practices.
+  - Support multiple programming languages.
+  - Provide clear, helpful, and accurate responses.
+
+5. **Error Handling**
+  - Handle API errors and invalid inputs gracefully.
+
+### Example
+
+- User: "How do I create a function in JavaScript?"
+- Bot: "You can use the `function` keyword or an arrow function. For example: `function greet() { console.log('Hello'); }`"
+
+- User: "Can you help me debug this code?"
+- Bot: "Sure! Please share your code and describe the issue."
+
+### Where to Implement
+
+- Write your solution in the `assessment.js` file in this repository.
+
+### Submission
+
+- Follow the instructions below to commit your code, push your branch, and create a pull request for review.
+
 
 6. **Make a Pull Request**
    - Push your changes:
