@@ -26,6 +26,10 @@ This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT
      git clone https://github.com/your-username/github-models-gpt4o-starter.git
      cd github-models-gpt4o-starter
      ```
+   - Create a new branch named `submission`:
+     ```bash
+     git checkout -b submission
+     ```
 
 3. **Set Up Environment Variables**
    - Create a `.env` file in the root directory:
@@ -37,7 +41,7 @@ This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT
      GITHUB_TOKEN=your_github_token_here
      ```
    - Ensure `.env` is added to `.gitignore`.
-
+   
 4. **Install Dependencies**
    - Run the following commands to install necessary packages:
      ```bash
@@ -93,10 +97,6 @@ This example demonstrates:
 Create a multi-turn chatbot for coding assistance using the provided starter repository.
 
 5. **Complete the Assessment**
-   - Create a new branch named `submission`:
-     ```bash
-     git checkout -b submission
-     ```
    - Implement the multi-turn chatbot in the `assessment.js` file.
 
 6. **Make a Pull Request**
