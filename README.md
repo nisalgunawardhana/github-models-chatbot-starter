@@ -1,6 +1,6 @@
 # GitHub Models GPT-4o Starter
 
-This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT-4o) using Node.js. It includes examples for:
+This repository provides a comprehensive starter kit for leveraging GitHub's GPT-4o AI models with Node.js. Designed for developers, students, and educators, it showcases practical examples for building intelligent chatbots, handling multi-turn conversations, streaming AI responses, processing images, and integrating advanced reasoning capabilities. With step-by-step setup instructions and real-world coding tasks, this project helps you quickly integrate state-of-the-art AI into your applications. Ideal for those seeking to learn, experiment, or build production-ready solutions using GitHub's AI inference API and the latest GPT-4o technology.
 
 - **Basic Chat Completion**
 - **Multi-turn Conversation**
@@ -18,32 +18,32 @@ This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT
 ## Setup
 
 1. **Fork the Repository**
-   - Visit the repository on GitHub and fork it to your account.
+  Visit the repository on GitHub and fork it to your account.
 
 2. **Create a Branch**
-   - Clone the forked repository:
+  Clone the forked repository:
      ```bash
      git clone https://github.com/your-username/github-models-gpt4o-starter.git
      cd github-models-gpt4o-starter
      ```
-   - Create a new branch named `submission`:
+  Create a new branch named `submission`:
      ```bash
      git checkout -b submission
      ```
 
 3. **Set Up Environment Variables**
-   - Create a `.env` file in the root directory:
+  Create a `.env` file in the root directory:
      ```bash
      cp .env.sample .env
      ```
-   - Add your GitHub token to the `.env` file:
+  Add your GitHub token to the `.env` file:
      ```env
      GITHUB_TOKEN=your_github_token_here
      ```
-   - Ensure `.env` is added to `.gitignore`.
+  Ensure `.env` is added to `.gitignore`.
    
 4. **Install Dependencies**
-   - Run the following commands to install necessary packages:
+Run the following commands to install necessary packages:
      ```bash
      npm install
      ```
