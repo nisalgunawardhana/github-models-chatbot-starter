@@ -41,7 +41,7 @@ This repository demonstrates the use of GitHub Marketplace-hosted AI models (GPT
      GITHUB_TOKEN=your_github_token_here
      ```
    - Ensure `.env` is added to `.gitignore`.
-   ```
+   
 4. **Install Dependencies**
    - Run the following commands to install necessary packages:
      ```bash
