@@ -8,7 +8,6 @@ yarn-error.log
 .env
 
 # Package files
-package.json
 package-lock.json
 yarn.lock
 
