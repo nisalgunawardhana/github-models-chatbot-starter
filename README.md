@@ -21,8 +21,8 @@ This repository provides a comprehensive starter kit for leveraging GitHub's GPT
 
 2. Clone your forked repository and create a new branch named `submission`:
 ```bash
-git clone https://github.com/your-username/github-models-gpt4o-starter.git
-cd github-models-gpt4o-starter
+git clone https://github.com/your-username/github-models-chatbot-starter.git
+cd github-models-chatbot-starter
 git checkout -b submission
 ```
 
