@@ -17,36 +17,29 @@ This repository provides a comprehensive starter kit for leveraging GitHub's GPT
 
 ## Setup
 
-1. **Fork the Repository**
-  Visit the repository on GitHub and fork it to your account.
+1. Fork the repository by visiting it on GitHub and clicking "Fork" to add it to your account.
 
-2. **Create a Branch**
-  Clone the forked repository:
-     ```bash
-     git clone https://github.com/your-username/github-models-gpt4o-starter.git
-     cd github-models-gpt4o-starter
-     ```
-  Create a new branch named `submission`:
-     ```bash
-     git checkout -b submission
-     ```
+2. Clone your forked repository and create a new branch named `submission`:
+```bash
+git clone https://github.com/your-username/github-models-gpt4o-starter.git
+cd github-models-gpt4o-starter
+git checkout -b submission
+```
 
-3. **Set Up Environment Variables**
-  Create a `.env` file in the root directory:
-     ```bash
-     cp .env.sample .env
-     ```
-  Add your GitHub token to the `.env` file:
-     ```env
-     GITHUB_TOKEN=your_github_token_here
-     ```
-  Ensure `.env` is added to `.gitignore`.
-   
-4. **Install Dependencies**
-Run the following commands to install necessary packages:
-     ```bash
-     npm install
-     ```
+3. Set up environment variables by creating a `.env` file in the root directory:
+```bash
+cp .env.sample .env
+```
+Add your GitHub token to the `.env` file:
+```env
+GITHUB_TOKEN=your_github_token_here
+```
+Make sure `.env` is included in `.gitignore`.
+
+4. Install dependencies by running:
+```bash
+npm install
+```
 ## Running the Examples
 
 The following examples demonstrate how to interact with the GPT-4o model using different features. Each script showcases a specific capability, such as basic chat, multi-turn conversations, streaming responses, image input, function/tool calling, and advanced reasoning(with o1-priview model). Run each file as described to see how the model responds to various types of input and tasks.
