@@ -133,7 +133,7 @@ You are required to build a multi-turn chatbot that provides coding assistance u
 
 Once you have finished implementing your multi-turn coding assistant chatbot in `assessment.js` and submitted your pull request, you will be eligible to receive an official certificate and badge from MLSA.
 
-> ![Sample Certificate and Badge](../img/certificate-sample.png)
+> ![Sample Certificate and Badge](./Images/certificate-sample.png)
 
 **How to claim your certificate and badge:**
 1. Complete all steps in the "Assessment Task" section.
@@ -154,8 +154,8 @@ Once you have finished implementing your multi-turn coding assistant chatbot in 
      ```
    - Create a pull request from your `submission` branch to the `submission-reviewer` branch on the main repository.
 
-   ![How to Make a PR - Step 1](../img/pr-image1.png)
-   ![How to Make a PR - Step 2](../img/pr-image2.png)
+   ![How to Make a PR - Step 1](./Images/pr-image1.png)
+   ![How to Make a PR - Step 2](./Images/pr-image2.png)
 
     Follow the above images for a visual guide on creating a pull request.
 
