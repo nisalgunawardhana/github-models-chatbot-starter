@@ -89,6 +89,8 @@ This example demonstrates:
 ---
 ## Assessment Task: Multi-turn Coding Assistant Chatbot
 
+Showcase your achievement on LinkedIn, GitHub, or your portfolio to impress future employers and peers!
+
 You are required to build a multi-turn chatbot that provides coding assistance using the GPT-4o model via GitHub's AI inference API. Your chatbot should maintain conversation context, offer meaningful programming help, and support multiple languages and coding scenarios.
 
 ### What to Do
@@ -126,6 +128,17 @@ You are required to build a multi-turn chatbot that provides coding assistance u
 ### Where to Implement
 
 - Write your solution in the `assessment.js` file in this repository.
+
+**Complete the assessment as described below to earn your certificate and badge!**
+
+Once you have finished implementing your multi-turn coding assistant chatbot in `assessment.js` and submitted your pull request, you will be eligible to receive an official certificate and badge from MLSA.
+
+> ![Sample Certificate and Badge](../img/certificate-sample.png)
+
+**How to claim your certificate and badge:**
+1. Complete all steps in the "Assessment Task" section.
+2. Submit your pull request and create an issue as instructed.
+3. After your submission is reviewed and approved, you will receive your personalized certificate and badge via email.
 
 ### Submission
 
