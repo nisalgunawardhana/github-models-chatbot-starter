@@ -1,6 +1,9 @@
-# GitHub Models GPT-4o Starter
+# GitHub Models Chatbot Starter
 
 This repository provides a comprehensive starter kit for leveraging GitHub's GPT-4o AI models with Node.js. Designed for developers, students, and educators, it showcases practical examples for building intelligent chatbots, handling multi-turn conversations, streaming AI responses, processing images, and integrating advanced reasoning capabilities. With step-by-step setup instructions and real-world coding tasks, this project helps you quickly integrate state-of-the-art AI into your applications. Ideal for those seeking to learn, experiment, or build production-ready solutions using GitHub's AI inference API and the latest GPT-4o technology.
+
+[![Follow me on GitHub](https://img.shields.io/github/followers/nisalgunawardhana?label=Follow%20me%20on%20GitHub&style=social)](https://github.com/nisalgunawardhana)
+
 
 - **Basic Chat Completion**
 - **Multi-turn Conversation**
@@ -89,6 +92,8 @@ This example demonstrates:
 ---
 ## Assessment Task: Multi-turn Coding Assistant Chatbot
 
+Showcase your achievement on LinkedIn, GitHub, or your portfolio to impress future employers and peers!
+
 You are required to build a multi-turn chatbot that provides coding assistance using the GPT-4o model via GitHub's AI inference API. Your chatbot should maintain conversation context, offer meaningful programming help, and support multiple languages and coding scenarios.
 
 ### What to Do
@@ -127,6 +132,17 @@ You are required to build a multi-turn chatbot that provides coding assistance u
 
 - Write your solution in the `assessment.js` file in this repository.
 
+**Complete the assessment as described below to earn your certificate and badge!**
+
+Once you have finished implementing your multi-turn coding assistant chatbot in `assessment.js` and submitted your pull request, you will be eligible to receive an official certificate and badge from MLSA.
+
+> ![Sample Certificate and Badge](./Images/certificate-sample.png)
+
+**How to claim your certificate and badge:**
+1. Complete all steps in the "Assessment Task" section.
+2. Submit your pull request and create an issue as instructed.
+3. After your submission is reviewed and approved, you will receive your personalized certificate and badge via email.
+
 ### Submission
 
 - Follow the instructions below to commit your code, push your branch, and create a pull request for review.
@@ -141,8 +157,8 @@ You are required to build a multi-turn chatbot that provides coding assistance u
      ```
    - Create a pull request from your `submission` branch to the `submission-reviewer` branch on the main repository.
 
-   ![How to Make a PR - Step 1](../img/pr-image1.png)
-   ![How to Make a PR - Step 2](../img/pr-image2.png)
+   ![How to Make a PR - Step 1](./Images/pr-image1.png)
+   ![How to Make a PR - Step 2](./Images/pr-image2.png)
 
     Follow the above images for a visual guide on creating a pull request.
 
@@ -178,7 +194,7 @@ To use these demos, you need a GitHub personal access token with the `models:rea
 
 ### Video Walkthrough
 
-[![How to Get a GitHub Token](./Images/demo_token_video.mp4)](../Images/demo_token_video.mp4)
+[![How to Get a GitHub Token](./Images/demo_token_video.mp4)](./Images/demo_token_video.mp4)
 
 Watch this short video for a step-by-step guide on generating your GitHub personal access token.
 
