@@ -28,7 +28,7 @@ import dotenv from "dotenv";
 // Load environment variables for API authentication
 dotenv.config();
 const token = process.env["GITHUB_TOKEN"];
-const endpoint = "https://models.github.ai/inference";
+const endpoint = "https://api.openai.com/v1";
 const modelName = "openai/gpt-4o";
 
 /**
