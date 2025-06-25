@@ -54,3 +54,81 @@
 // Example:
 // User: "How do I create a function in JavaScript?"
 // Bot: "You can create a function using the `function` keyword or as an arrow function. Here's an example: ..."
+
+
+import OpenAI from "openai";
+import dotenv from "dotenv";
+import readline from "readline";
+import { highlight } from 'cli-highlight';
+
+
+// Load environment variables for secure token management
+dotenv.config();
+// Get GitHub token for API authentication
+const token = process.env["GITHUB_TOKEN"];
+// GitHub's AI inference endpoint
+const endpoint = "https://models.github.ai/inference";
+// GPT-4o model for conversational AI
+const modelName = "openai/gpt-4o";
+
+export async function main() {
+    // Initialize OpenAI client with GitHub's endpoint
+    const client = new OpenAI({ baseURL: endpoint, apiKey: token });
+
+    // Set up readline interface for command-line interaction
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    // Initialize conversation with system message to define AI behavior
+    let messages = [
+        { role: "system", content: "You are a helpful coding assistant." }
+    ];
+
+    // Recursive function to handle continuous conversation
+    async function chatLoop() {
+        rl.question('User: ', async (input) => {
+            // Check for exit command to end conversation
+            if (input.trim().toLowerCase() === "exit") {
+                rl.close();
+                return;
+            }
+
+            if (input.trim().toLowerCase() === "clear") {
+                // Clear conversation history
+                console.log("Conversation history cleared.");
+                chatLoop();
+                return;
+            }
+
+            // Add user message to conversation history
+            messages.push({ role: "user", content: input });
+
+            // Send entire conversation history to maintain context
+            const response = await client.chat.completions.create({
+                messages,
+                model: modelName
+            });
+
+            // Extract and display AI response 
+            const reply = response.choices[0].message.content;
+            // Highlight the AI response for better readability
+            console.log("Bot:\n", highlight(reply, { language: 'javascript', ignoreIllegals: true }));
+            // Add AI response to conversation history for future context
+            messages.push({ role: "assistant", content: reply });
+
+            // Continue the conversation loop
+            chatLoop();
+        });
+    }
+    // Provide user instructions and start the conversation
+    console.log("Welcome to the Coding Assistant Chatbot!");
+    console.log("Type your coding questions or commands. Type 'exit' to end the conversation.");
+    chatLoop();
+}
+
+// Execute main function with error handling
+main().catch(error => {
+    console.error("An error occurred:", error);
+});
