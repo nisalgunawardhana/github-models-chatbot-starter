@@ -111,8 +111,9 @@ export async function main() {
                 model: modelName
             });
 
-            // Extract and display AI response
+            // Extract and display AI response 
             const reply = response.choices[0].message.content;
+            // Highlight the AI response for better readability
             console.log("Bot:\n", highlight(reply, { language: 'javascript', ignoreIllegals: true }));
             // Add AI response to conversation history for future context
             messages.push({ role: "assistant", content: reply });
